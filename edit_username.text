@@ -1,0 +1,27 @@
+#Editing username centOS Linux
+
+#Author : OS
+#Date   : Feb 14 2023
+
+
+
+Firstly, log in as root or switch to root using 'su' command.
+
+(1)- Rename the user's home directory using the 'mv' command,
+     Example: mv /home/oldusername /home/newusername
+
+(2)- Use the 'usermod' command to change the username.
+     Example: usermod -l newusername oldusername
+
+(3)- Update the group name to match the new username using 'groupmod' command.
+     Example: groupmod -n newusername oldusername 
+
+(4)- Change the ownership of the home directory to reflect the new username using the 'chown' command
+     Example: chown -R newusername:newusername /home/newusername
+
+ Lastly, log out and log back in usinf your new username.
+
+
+ Thamk You!
+ O.S
+
